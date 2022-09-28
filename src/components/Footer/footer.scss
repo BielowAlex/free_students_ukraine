@@ -1,0 +1,60 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #313131;
+  padding: 104px 34px;
+
+  .logo{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #29B6F6;
+
+    span{
+      color: #FFE600;
+    }
+  }
+
+  .social_media{
+    display: flex;
+    gap: 15px;
+
+    svg{
+      width: 52px;
+    }
+  }
+
+  .copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+
+    p{
+      font-family: 'Montserrat',sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+
+    .glory_ukraine{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 17px;
+
+      &_text{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFD500;
+
+      }
+    }
+  }
+}

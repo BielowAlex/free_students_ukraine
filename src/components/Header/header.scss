@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("/public/images/header/back.jpg");
+  background-size: cover;
+  z-index: 20;
+  padding: 34px 54px 104px 54px;
+  gap: 50px;
+  //height: 375px;
+  position: relative;
+
+  &_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -10;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -10;
+      width: 100%;
+      height: 575px;
+    }
+  }
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .glory_ukraine {
+      display: flex;
+      gap: 17px;
+
+      &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+
+        .text {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          color: #FFD500;
+          cursor: context-menu;
+        }
+      }
+    }
+
+    .lang_selector {
+      display: flex;
+      align-items: center;
+      gap: 31px;
+
+      .lang {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s linear;
+
+        &:hover {
+          color: #FFE600;
+        }
+
+        &.ua {
+          padding: 12px 23px;
+          border: 2px solid white;
+          border-radius: 15px;
+
+          &:hover {
+            color: #FFE600;
+            border-color: #FFE600;
+          }
+        }
+      }
+    }
+  }
+
+  &_content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .appeal {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 73px;
+
+      h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        text-align: left;
+        color: white;
+        line-height: 44px;
+        cursor: context-menu;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 13px;
+        padding: 16px 22px;
+        border: 2px solid white;
+        border-radius: 100px;
+        transition: all 0.4s linear;
+
+        span {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: white;
+          transition: all 0.4s linear;
+        }
+
+        svg {
+          g, path {
+            transition: all 0.4s linear;
+          }
+        }
+
+        &:hover {
+          border-color: #FFE600;
+
+          span {
+            color: #FFE600;
+          }
+
+          svg {
+            g, path {
+              fill: #FFE600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

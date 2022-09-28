@@ -1,0 +1,131 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("/public/images/header/back.jpg");
+  background-size: cover;
+  z-index: 20;
+  padding: 34px 54px 104px 54px;
+  gap: 50px;
+  position: relative;
+}
+.header_back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: -10;
+}
+.header_back img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 575px;
+}
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header_top .glory_ukraine {
+  display: flex;
+  gap: 17px;
+}
+.header_top .glory_ukraine_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.header_top .glory_ukraine_text .text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFD500;
+  cursor: context-menu;
+}
+.header_top .lang_selector {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+.header_top .lang_selector .lang {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.header_top .lang_selector .lang:hover {
+  color: #FFE600;
+}
+.header_top .lang_selector .lang.ua {
+  padding: 12px 23px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+.header_top .lang_selector .lang.ua:hover {
+  color: #FFE600;
+  border-color: #FFE600;
+}
+.header_content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.header_content .appeal {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 73px;
+}
+.header_content .appeal h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: left;
+  color: white;
+  line-height: 44px;
+  cursor: context-menu;
+}
+.header_content .appeal a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 13px;
+  padding: 16px 22px;
+  border: 2px solid white;
+  border-radius: 100px;
+  transition: all 0.4s linear;
+}
+.header_content .appeal a span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.4s linear;
+}
+.header_content .appeal a svg g, .header_content .appeal a svg path {
+  transition: all 0.4s linear;
+}
+.header_content .appeal a:hover {
+  border-color: #FFE600;
+}
+.header_content .appeal a:hover span {
+  color: #FFE600;
+}
+.header_content .appeal a:hover svg g, .header_content .appeal a:hover svg path {
+  fill: #FFE600;
+}
+
+/*# sourceMappingURL=header.css.map */
